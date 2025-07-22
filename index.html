@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tic Tac Toe Neon</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Tic Tac Toe - Neon Edition</h1>
+
+  <!-- Game Mode Selection -->
+  <div class="container" id="modeContainer">
+    <h2>Select Game Mode</h2>
+    <div class="mode-selection">
+      <button onclick="selectMode('hvh')">Human vs Human</button>
+      <button onclick="selectMode('hvc')">Human vs Computer</button>
+    </div>
+  </div>
+
+  <!-- Player Inputs -->
+  <div class="container hidden" id="playerContainer">
+    <h2>Enter Player Names</h2>
+    <div class="profile-pics">
+      <img src="images/default1.png" id="pic1" />
+      <img src="images/default2.png" id="pic2" />
+    </div>
+    <input type="text" id="player1" placeholder="Player 1 Name" required />
+    <input type="text" id="player2" placeholder="Player 2 Name" required />
+    <button onclick="startGame()">Start Game</button>
+  </div>
+
+  <!-- Game Board -->
+  <div class="container hidden" id="gameContainer">
+    <div class="status" id="statusText">Game in progress...</div>
+    <div class="board" id="board">
+      <div class="cell" data-index="0"></div>
+      <div class="cell" data-index="1"></div>
+      <div class="cell" data-index="2"></div>
+      <div class="cell" data-index="3"></div>
+      <div class="cell" data-index="4"></div>
+      <div class="cell" data-index="5"></div>
+      <div class="cell" data-index="6"></div>
+      <div class="cell" data-index="7"></div>
+      <div class="cell" data-index="8"></div>
+    </div>
+    <button onclick="resetGame()">Restart</button>
+  </div>
+
+  <!-- Scoreboard View -->
+  <div class="scoreboard-link">
+    <a href="viewScores.jsp" class="view-scores-btn">📊 View Previous Scores</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
