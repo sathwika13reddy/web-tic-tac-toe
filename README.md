@@ -33,3 +33,5 @@ CREATE TABLE scoreboard (
     winner VARCHAR2(100),
     played_on DATE DEFAULT SYSDATE
 );
+<img width="1366" height="720" alt="Screenshot 2025-07-22 104117" src="https://github.com/user-attachments/assets/19aa7597-3f50-4cd8-91cd-fac960764de3" />
+
